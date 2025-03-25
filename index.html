@@ -11,12 +11,12 @@
   <header>
     <img src="images/logo.png" height="100px">
     <nav class="nav">
-      <ul>
-        <li>Home</li>
-        <li>Categories</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Location</li>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Contact</a></li>
+        <li><a href="about.html">Location</a></li>
     </ul>
     </nav>
   </header>
@@ -25,39 +25,14 @@
     <h1>Find Recipes For Every Craving</h1>
     <p>Explore a variety of dishes and learn to cook step by step.</p>
     <div class="search">
-    <input type="text" placeholder="Search Recipe..." class="search_bar"/>
+      <input type="text" placeholder="Recipe Name" spellcheck="false">
+      <button><img src="images/search.png"></button>
     </div>
     </div>
   </section>
-  <section class="categories">
-    <h2>Explore Categories</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="images/veg.png" alt="Vegetarian">
-            <p>Vegetarian</p>
-        </div>
-        <div class="card">
-            <img src="images/nonveg.png" alt="Non-Vegetarian">
-            <p>Non-Vegetarian</p>
-        </div>
-        <div class="card">
-          <img src="images/seafood.png" alt="Seafood">
-          <p>Sea Food</p>
-      </div>
-      <div class="card">
-        <img src="images/snacks.png" alt="Snacks">
-        <p>Snacks</p>
-    </div>
-        <div class="card">
-            <img src="images/dessert.png" alt="Desserts">
-            <p>Desserts</p>
-        </div>
-        <div class="card">
-            <img src="images/drink.png" alt="Drinks">
-            <p>Drinks</p>
-        </div>
-    </div>
-</section>
+  <div class="result"></div>
+  <!-- <div class="detail"></div> -->
+  
 <section>
   <div class="categories">
     <h2>Trending Recipes</h2>
@@ -69,7 +44,9 @@
                 Pasta
                 <div class="allergy"><b>Allergy Warning:</b> Contains dairy and gluten.</div>
               </p>
-              <button class="view">View Recipe</button>
+              <button class="view" onclick="
+              checkRecipe('pasta')
+              ">View Recipe</button>
           </div>
           <div class="card">
               <img src="images/pizza.png" alt="pizza">
@@ -78,16 +55,20 @@
                 Pizza
                 <div class="allergy"><b>Allergy Warning:</b> Contains dairy and gluten.</div>
               </p>
-              <button class="view">View Recipe</button>
+              <button class="view" onclick="
+              checkRecipe('pizza')
+              ">View Recipe</button>
           </div>
           <div class="card">
               <img src="images/biryani.png" alt="biryani">
               <div class="star-rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
               <p>
-                Chicken Biryani
+                Biryani
                 <div class="allergy"><b>Allergy Warning:</b> Contains dairy and nuts.</div>
               </p>
-              <button class="view">View Recipe</button>
+              <button class="view" onclick="
+              checkRecipe('biryani')
+              ">View Recipe</button>
           </div>
           <div class="card">
               <img src="images/sushi.png" alt="sushi">
@@ -96,16 +77,20 @@
                 Sushi
                 <div class="allergy"><b>Allergy Warning:</b> Contains fish and soy.</div>
               </p>
-              <button class="view">View Recipe</button>
+              <button class="view" onclick="
+              checkRecipe('sushi')
+              ">View Recipe</button>
           </div>
           <div class="card">
             <img src="images/thai.png" alt="pad thai">
             <div class="star-rating">⭐ ⭐ ⭐ </div>
             <p>
-              Pad Thai
+              Pad See Ew
               <div class="allergy"><b>Allergy Warning:</b> Contains peanuts and soy.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('pad')
+            ">View Recipe</button>
           </div>
           <div class="card">
             <img src="images/lasagna.png" alt="lasagna">
@@ -114,25 +99,31 @@
               Lasagna
               <div class="allergy"><b>Allergy Warning:</b> Contains dairy and gluten.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('lasagna')
+            ">View Recipe</button>
           </div>
           <div class="card">
             <img src="images/chicken.png" alt="butter chicken">
             <div class="star-rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
             <p>
-              Butter Chicken
+              Chicken Handi
               <div class="allergy"><b>Allergy Warning:</b> Contains dairy and nuts.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('chicken handi')
+            ">View Recipe</button>
           </div>
           <div class="card">
             <img src="images/pho.png" alt="pho">
             <div class="star-rating">⭐ ⭐ ⭐</div>
             <p>
-              Pho
+              Prawn noodles
               <div class="allergy"><b>Allergy Warning:</b> Contains soy and gluten.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('noodles')
+            ">View Recipe</button>
           </div>
           <div class="card">
             <img src="images/tiramisu.png" alt="tiramisu">
@@ -141,7 +132,9 @@
               Tiramisu
               <div class="allergy"><b>Allergy Warning:</b> Contains dairy and eggs.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('tiramisu')
+            ">View Recipe</button>
           </div>
           <div class="card">
             <img src="images/baklava.png" alt="Baklava">
@@ -150,7 +143,9 @@
               Baklava
               <div class="allergy"><b>Allergy Warning:</b> Contains nuts and gluten.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('baklava')
+            ">View Recipe</button>
           </div>
           <div class="card">
             <img src="images/gulab.png" alt="gulab jamun">
@@ -159,7 +154,9 @@
               Gulab Jamun
               <div class="allergy"><b>Allergy Warning:</b> Contains dairy and gluten.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('gulab jamun')
+            ">View Recipe</button>
           </div>
           <div class="card">
             <img src="images/mochi.png" alt="mochi">
@@ -168,7 +165,9 @@
               Mochi
               <div class="allergy"><b>Allergy Warning:</b> Contains dairy and gluten.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('mochi')
+            ">View Recipe</button>
           </div>
           <div class="card">
             <img src="images/cake.png" alt="cheesecake">
@@ -177,7 +176,9 @@
               Cheesecake
               <div class="allergy"><b>Allergy Warning:</b> Contains dairy and eggs.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('cheesecake')
+            ">View Recipe</button>
         </div>
         <div class="card">
             <img src="images/samosa.png" alt="samosa">
@@ -186,7 +187,9 @@
               Samosa
               <div class="allergy"><b>Allergy Warning:</b> Contains dairy and gluten.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('samosa')
+            ">View Recipe</button>
         </div>
         <div class="card">
             <img src="images/nachos.png" alt="nachos">
@@ -195,33 +198,39 @@
               Nachos
               <div class="allergy"><b>Allergy Warning:</b> Contains dairy and gluten.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('nachos')
+            ">View Recipe</button>
         </div>
         <div class="card">
             <img src="images/spring.png" alt="spring rolls">
             <div class="star-rating">⭐ ⭐ ⭐</div>
             <p>
-              Spring Rolls
+              cabbage Roll
               <div class="allergy"><b>Allergy Warning:</b> Contains soy and gluten.</div>
             </p>
-            <button class="view">View Recipe</button>
+            <button class="view" onclick="
+            checkRecipe('golabki')
+            ">View Recipe</button>
         </div>
       </div>
   </div>
 </section>
-<section class="user-recipe">
+<!-- <section class="user-recipe">
   <h2>User Recipes</h2>
   <p>
     <img src="images/recipe.png"></br>
     Share your own delicious creations with the community! Submit your recipe and get featured.</br>
-  <button class="submit">Submit Your Recipe</button></p>
-</section>
+  <button type="menu" class="submit">Submit Your Recipe</button></p>
+</section> -->
 <section class="feed">
   <h2>Feed the Hungry</h2>
   <p>
   <img src="images/hungry.png"/></br>
   Join us in making a difference! Help provide meals to those in need by contributing to our food donation initiative.</br>
-  <button class="donate">Donate a Meal</button>
+  <button class="donate" onclick="
+  donate();
+  ">Donate a Meal</button>
   </p>
 </section>
 <footer>
@@ -242,5 +251,7 @@
     <p>&copy; <strong>2025 Crave Out</strong></br> All rights reserved.</p>
   </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>

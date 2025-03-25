@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="result-cat"></div>
+    <section class="categories">
+        <h2>Explore Categories</h2>
+        <div class="grid">
+            <div class="card veg" onclick="
+                recipeCategory('Vegetarian')
+                ">
+                <img src="images/veg.png" alt="Vegetarian">
+                <p>Vegetarian</p>
+            </div>
+            <div class="card non-veg" onclick="
+            recipeCategory('chicken')
+            ">
+                <img src="images/nonveg.png" alt="Non-Vegetarian">
+                <p>Chicken</p>
+            </div>
+            <div class="card seafood" onclick="
+            recipeCategory('seafood')
+            ">
+              <img src="images/seafood.png" alt="Seafood">
+              <p>Sea Food</p>
+          </div>
+          <div class="card snacks" onclick="
+          recipeCategory('side')
+          ">
+            <img src="images/snacks.png" alt="Snacks">
+            <p>Snacks</p>
+        </div>
+            <div class="card desserts" onclick="
+            recipeCategory('dessert')
+            ">
+                <img src="images/dessert.png" alt="Desserts">
+                <p>Desserts</p>
+            </div>
+            <div class="card drinks" onclick="
+            recipeCategory('soup')
+            ">
+                <img src="images/drink.png" alt="Drinks">
+                <p>Drinks</p>
+            </div>
+        </div>
+        <button class="home-button"><a href="index.html">HOME</a></button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
