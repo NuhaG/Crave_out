@@ -2,7 +2,10 @@ body{
     margin: 0;
     padding: 0;
     font-family:'Poppins',Arial, Helvetica, sans-serif;
-    background-color: #8eb944;
+    /* background-color: #8eb944; */
+    background-color: black;
+    color: #d9faa1;
+
 }
 header{
     font-family: 'cursive';
@@ -37,7 +40,7 @@ header{
     padding: 40px;
 }
 .text{
-    color: #022e0d;
+    color:black;
     font-size: 20px;
 }
 .search{
@@ -96,7 +99,7 @@ header{
 }
 a{
     text-decoration: none;
-    color: #8eb944;
+    color:#cdf588;
 }
 a:hover{
     color: #2c7e30;
@@ -143,6 +146,7 @@ input[type="text"]::placeholder{
     flex-wrap: wrap;
 }
 .card {
+    color: #000000;
     background: #d9faa1;
     padding: 15px;
     border-radius: 10px;
@@ -217,7 +221,7 @@ input[type="text"]::placeholder{
     font-size: 22px;
     font-weight: bold;
     padding: 20px;
-    margin-top: 18px;
+    margin-top: 19px;
 }
 .submit, .donate{
     border: none;
