@@ -4,7 +4,7 @@ body{
     font-family:'Poppins',Arial, Helvetica, sans-serif;
     /* background-color: #8eb944; */
     background-color: black;
-    color: #d9faa1;
+    color: #E7FBB4;
 
 }
 header{
@@ -12,7 +12,7 @@ header{
     display: flex;
     justify-content:flex-start;
     gap: 20px;
-    color:#d9faa1;
+    color:#E7FBB4;
     background-color: #000000;
     padding-left: 90px;
     font-size: 20px;
@@ -36,7 +36,7 @@ header{
 }
 .banner{
     text-align: center;
-    background-color:#d9faa1;
+    background-color:#E7FBB4;
     padding: 40px;
 }
 .text{
@@ -55,13 +55,13 @@ header{
     flex: 1;
     margin-right: 16px;   
     font-size: 18px;
-    background-color:#8eb944;
+    background-color:#369c3a;
     color:#022e0d;
 }
 .search button{
     border:0;
     outline:0;
-    background-color:#8eb944;
+    background-color:#369c3a;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -75,7 +75,7 @@ header{
     display: flex;
     justify-content:flex-start;
     gap: 20px;
-    color:#d9faa1;
+    color:#E7FBB4;
     background-color: #000000;
     padding-left: 90px;
     font-size: 20px;
@@ -106,7 +106,7 @@ a:hover{
 }
 .banner{
     text-align: center;
-    background-color:#d9faa1;
+    background-color:#E7FBB4;
     padding: 40px;
 }
 .text{
@@ -127,7 +127,7 @@ a:hover{
     outline: 2px solid #8eb944;
 }
 input[type="text"]::placeholder{
-    color:#d9faa1;
+    color:#E7FBB4;
     font-family: 'Papyrus','cursive','sans sherif';
     opacity: 0.8;
 }
@@ -147,7 +147,7 @@ input[type="text"]::placeholder{
 }
 .card {
     color: #000000;
-    background: #d9faa1;
+    background: #E7FBB4;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -181,7 +181,7 @@ input[type="text"]::placeholder{
     margin-top: 1px;
     padding: 8px 12px;
     background: #369c3a;
-    color:#d9faa1;
+    color:#E7FBB4;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -229,7 +229,7 @@ input[type="text"]::placeholder{
     margin-top: 20px;
     padding: 8px 15px;
     background-color:#369c3a;
-    color:#d9faa1;
+    color:#E7FBB4;
     font-size: 17px;
 }
 .submit:hover,.donate:hover{
@@ -237,7 +237,7 @@ input[type="text"]::placeholder{
 }
 footer {
     background-color:#000000;
-    color:#d9faa1;
+    color:#E7FBB4;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -277,7 +277,7 @@ footer {
     flex-wrap: wrap;
 }
 .card {
-    background: #d9faa1;
+    background: #E7FBB4;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -311,7 +311,7 @@ footer {
     margin-top: 1px;
     padding: 8px 12px;
     background: #369c3a;
-    color:#d9faa1;
+    color:#E7FBB4;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -359,7 +359,7 @@ footer {
     margin-top: 20px;
     padding: 8px 15px;
     background-color:#369c3a;
-    color:#d9faa1;
+    color:#E7FBB4;
     font-size: 17px;
 }
 .submit:hover,.donate:hover{
@@ -367,7 +367,7 @@ footer {
 }
 footer {
     background-color:#000000;
-    color:#d9faa1;
+    color:#E7FBB4;
     font-size: 15px;
     text-align: center;
     padding: 20px;
