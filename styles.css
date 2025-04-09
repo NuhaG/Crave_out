@@ -8,7 +8,6 @@ body{
 
 }
 header{
-    font-family: 'cursive';
     display: flex;
     justify-content:flex-start;
     gap: 20px;
@@ -69,9 +68,9 @@ header{
 }
 .search button img{
     width: 16px;
+    background-color: transparent;
 }
 header{
-    font-family: 'cursive';
     display: flex;
     justify-content:flex-start;
     gap: 20px;
@@ -99,7 +98,7 @@ header{
 }
 a{
     text-decoration: none;
-    color:#cdf588;
+    color:#E7FBB4;
 }
 a:hover{
     color: #2c7e30;
@@ -196,7 +195,7 @@ input[type="text"]::placeholder{
     text-align: center;
 }
 .user-recipe p{
-    background-color:#cdf588;
+    background-color:#E7FBB4;
     color:#022e0d;
     text-align:  center;
     font-size: 22px;
@@ -215,7 +214,7 @@ input[type="text"]::placeholder{
     border-radius: 10px;
   }
 .feed p{
-    background-color:#cdf588;
+    background-color:#E7FBB4;
     color:#022e0d;
     text-align:  center;
     font-size: 22px;
@@ -326,7 +325,7 @@ footer {
     text-align: center;
 }
 .user-recipe p{
-    background-color:#cdf588;
+    background-color:#E7FBB4;
     color:#022e0d;
     text-align:  center;
     font-size: 22px;
@@ -345,7 +344,7 @@ footer {
     border-radius: 10px;
   }
 .feed p{
-    background-color:#cdf588;
+    background-color:#E7FBB4;
     color:#022e0d;
     text-align:  center;
     font-size: 22px;
@@ -392,7 +391,8 @@ footer {
 }
 .recipe{
     margin: 20px;
-    border: 20px solid #cdf588;
+    border: 6px solid #E7FBB4;
+    border-radius: 15px;
     /* text-align: center; */
     padding: 5%;
 }

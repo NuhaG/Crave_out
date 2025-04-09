@@ -118,3 +118,10 @@ function donate() {
         alert('Thank you for visiting')
     }
 }
+
+//scroll to top
+document.querySelectorAll(".view").forEach(button => {
+    button.addEventListener("click",()=>{
+        window.scrollTo({top:0,behavior:"smooth"});
+    })
+})
