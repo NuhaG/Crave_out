@@ -1,6 +1,4 @@
-const apiKey = "efc34a021fbbfa0078319a6ec9678631";
-const apiUrl =
-  "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+const apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 //DOM handling
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
